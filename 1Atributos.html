@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en"><!--lang: el atributo lang con el valor en a la etiqueta de apertura del elemento html para especificar que el lenguaje de la página es el inglés-->
+        <meta charset="utf-8"><!--charset: Con el valor utf-8 que le dirá al navegador cómo codificar los caracteres en la página-->
+        <title>
+            CatPhotApp
+        </title>
+    </head>
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <section>
+                <h2>Cat Photos</h2>
+                <!--TODO: Add link to cat photos-->
+                <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery</p><!--src: el atributo src en un elemento img especifica la URL donde se localiza la imagen
+                alt: el atributo alt es utilizado por los lectores de pantalla para mejorar la accesibilidad y es mostrado en caso de que la imagen falle en cargar-->
+                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt= A cute orange cat lying on its back></a> <!--href: se utiliza para hacer referncia a otro documento
+                target="_blank: abre el elemento enlazado en una nueva pestaña o ventana"-->
+            </section
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+                <figcaption>
+                    Cats <em>love</em> lasagna.
+                </figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+              </ol>
+              <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+              </figure>
+            </section>
+            <section>
+                <h2>Cat form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo"><!--name: para que los datos de un formulario sean accesibles en la ubicacion especificada en el atributo action debes darle al campo de texto un atributo name y asignarle un valor que represente los datos que se estan enviando
+                placeholder: utilizado en elementos de entrada de formulario, como campos o areas de texto, para proporcionar una sugerencia o ejemplo de lo que se espera que el usuario ingrese en ese espacio
+                required: para evitar que un usuario entregue su formulario incompleto necesitas el atributo required-->
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label>
+                    <input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</input><!--type="radio": se puede usar el boton de radio para preguntas en las que quieres que el usuario solo te de una respuesta a partir de multiples opciones
+                    id: se utiliza para identificar elementos HTML especificos, cada atributo id debe tener un valor unico diferente a los demas valores id de la pagina-->
+                    </label>
+                    <label>
+                        <input type="radio" id="indoor" name="indoor-outdoor" value="outdoor">Outdoor</input><!--value: -->
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input type="checkbox" id="loving">Loving<!--type="checkbox": los formularios usualmente usan casillas de verificacion (checkboxes-checkbox) para preguntas que puedan tener mas de una respuesta, el elemento input con el atributo type establecido en checkbox crea una casilla de verificacion-->
+                    <input type="checkbox" id="loving" name="personality" value="loving" checked>
+                        <label for="loving">Loving</label><!--for: hay otra manera de asociar un texto con el elemento input, se puede anidar un texto dentro de un elemento label y añadirle un atributo for con el mismo valor del atributo id del elemento input-->
+                    <input type="checkbox" id="lazy" name="personality" value="lazy">
+                        <label for="lazy">Lazy</label>
+                    <input type="checkbox" id="energetic" name="personality" value="energetic">
+                        <label for="energetic">Energetic</label>
+                </fieldset>
+                    <input type="text"  name="catphotourl" placeholder="cat photo URL" required><!--type: hay diferentes tipos de input los cuales se pueden crear co el atributo type, puede crear facilmente un cmapo de cotraseña (password), un boton de reinicio (reset) o un control para permitir a los usuarios seleccionar un archivo desde su computadora-->
+                    <button type="submit">Submit</button><!--type: El botón que has agregado enviará el formulario por defecto. Sin embargo, confiar en el comportamiento por defecto puede causar confusión. Agrega un atributo type con el valor submit al button para dejar claro que es un botón de envío
+                    name: para que los datos de un formulario sean accesibles en la ubicacion especificada en el atributo action debes darle al campo de texto un atributo name y asignarle un valor que represente los datos que se estan enviando
+                    placeholder: utilizado en elementos de entrada de formulario, como campos o areas de texto, para proporcionar una sugerencia o ejemplo de lo que se espera que el usuario ingrese en ese espacio
+                    required: para evitar que un usuario entregue su formulario incompleto necesitas el atributo required-->
+                </form><!--action: indica donde se deben enviar los datos del formulario-->
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer><!--footer: se usa para definir el pie de página de un documento o sección. Un pie de página normalmente contiene información sobre el autor del documento, datos de copyright, enlaces a términos de uso, información de contacto, etcétera-->
+    </body>
+</html>
