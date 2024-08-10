@@ -1,0 +1,70 @@
+<!DOCTYPE html><!--DOCTYPE: es una etiqueta especial que se escribe en la primera linea del documento HTML esta cadena especial es conocida como una declaración y se asegura de que el navegador intente cumplir las especificaciones de la industria, le dice a los navegadores que el documento es un documento HTML5 la cual es la última versión de HTML-->
+<html lang="en"><!--html: contendra dos partes principales: la cabecera del documento(head) y el cuerpo del documento(body)-->
+    <head>
+        <meta charset="utf-8"><!--meta: -->
+        <title>CatPhotoApp</title><!--determina lo que los navegadores muestran en la barra de título o en las pestañas del navegador-->
+    </head><!--se utiliza para contener metadatos sobre el documento, como su título, enlaces a hojas de estilo y scripts. Los metadatos son información sobre la página que no se muestra directamente en la página-->
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <section>
+                <h2>Cat Photos</h2>
+                <!--TODO: Add link to cat photos-->
+                <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery</p><!--p: define un parrafo de texto-->
+                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt= A cute orange cat lying on its back></a><!--a: sirve para enlazar a otra pakgina con el elemento de anclaje a-->
+            </section><!--section: es utilizado para definir secciones en un documento, como capitulos, encabezados, pies de paginas o cualquier otra seccion del documento, es un elemento semantico que ayuda a la SEO y la accesibilidad-->
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li><!--li: es usado para crear una lista de elementos en una lista ordenada o en una lista desordenada-->
+                </ul><!--ul: lista no ordenada de elementos-->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+                <figcaption>
+                    Cats <em>love</em><!--em: sirve para poner enfasis en una palabra o frase especifica--> lasagna.
+                </figcaption><!--figcaptiom: se usa para agregar una leyenda que describe la imagen contenida en el elemento figure-->
+            </figure><!--figure: representa contenido independiente y te permite asociar una imagen a una descripcion-->
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+              </ol><!--ol: el codigo de una lista ordenada es similar al de una lista no ordenada, pero los elementos de una lisa ordenada aparecen enumerados-->
+              <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+              </figure>
+            </section>
+            <section>
+                <h2>Cat form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend><!--legend: actua como una leyenda/descripcion para el contenido del elemento fieldset, le da a los usuario u contexto sobre lo que deben ingresar en esa parte del formulario-->
+                        <label>
+                        <input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor
+                        </label><!--label: se utilizar para ayudar a asociar el texto de un elemento input con el propio elemento input (especialmente para tecnologias de asistencia como lectores de pantalla)-->
+                        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input type="checkbox" id="loving"> Loving
+                        <input type="checkbox" id="loving" name="personality" value="loving" checked>
+                            <label for="loving">Loving</label>
+                        <input type="checkbox" id="lazy" name="personality" value="lazy">
+                            <label for="lazy">Lazy</label>
+                        <input type="checkbox" id="energetic" name="personality" value="energetic">
+                            <label for="energetic">Energetic</label>
+                    </fieldset>
+                    <input type="text" name="catphotoURL" placeholder="cat photo URL" required><!--input: te permite recolectar datos desde u formualrio web de diferentes formas -->
+                    <button type="submit">Submit</button><!--button: se utiliza para crea un boton criqueable, el comportamiento predeterminado de un boton sin atributos en un formulario es enviarla informacion a la ubicacion especificada en el atributo action del formulario-->
+                </form><!--form: se utiliza para obtener informacion de los usuarios-->
+            </section>
+        </main><!--main: es una etiqueta de agrupacion general que debe utilizarse para representar el contenido dominante y principal del documento-->
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body><!--body: contiene todos los elementos visuales de ua pagina por lo que es una de las partes mas importantes de una pagina web-->
+</html>
